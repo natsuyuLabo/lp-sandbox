@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="lighthouseのパフォーマンススコア100点への道" />
+    <title>lighthouseのパフォーマンススコア100点への道</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: large;
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      background-color: rgb(198, 212, 253);
+    }
+    img {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      vertical-align: top;
+    }
+    p {
+      text-align: center;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+      .wrapper {
+        gap: 24px;
+      }
+      .container {
+        max-width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <h1>lighthouseのパフォーマンススコア100点への道</h1>
+      <div class="container">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./assets/images/768x438.webp" />
+          <source media="(max-width: 1000px)" srcset="./assets/images/1000x570.webp" />
+          <source media="(max-width: 1280px)" srcset="./assets/images/1536x876.webp" />
+          <!-- prettier-ignore -->
+          <img
+            src="./assets/images/2304x1314.png"
+            alt=""
+            srcset="
+              ./assets/images/768x438.png 768w,
+              ./assets/images/1000x570.png 1000w,
+              ./assets/images/1536x876.png 1536w
+            "
+            width="2304"
+            height="1314"
+            sizes="(max-width: 1280px) 100vw, 1280px"
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>
