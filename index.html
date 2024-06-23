@@ -23,11 +23,6 @@
       align-items: center;
       justify-content: center;
     }
-    .wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
     .container {
       max-width: 900px;
       margin: 0 auto;
@@ -54,15 +49,14 @@
     }
   </style>
   <body>
-    <div class="wrapper">
-      <h1>lighthouseのパフォーマンススコア100点への道</h1>
-      <div class="container">
-        <picture>
-          <source media="(max-width: 768px)" srcset="./assets/images/768x438.webp" />
-          <source media="(max-width: 1000px)" srcset="./assets/images/1000x570.webp" />
-          <source media="(max-width: 1280px)" srcset="./assets/images/1536x876.webp" />
-          <!-- prettier-ignore -->
-          <img
+    <h1>lighthouseのパフォーマンススコア100点への道</h1>
+    <div class="container">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./assets/images/768x438.webp" />
+        <source media="(max-width: 1000px)" srcset="./assets/images/1000x570.webp" />
+        <source media="(max-width: 1280px)" srcset="./assets/images/1536x876.webp" />
+        <!-- prettier-ignore -->
+        <img
             src="./assets/images/2304x1314.png"
             alt=""
             srcset="
@@ -75,9 +69,7 @@
             sizes="(max-width: 1280px) 100vw, 1280px"
             decoding="async"
           />
-        </picture>
-      </div>
-      <div class="container"></div>
+      </picture>
     </div>
   </body>
 </html>
